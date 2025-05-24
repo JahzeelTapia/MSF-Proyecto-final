@@ -9,17 +9,12 @@ Ingeniería Biomédica, Departamento de Ingeniería Eléctrica y Electrónica, T
 Diseñar un gemelo digital de un sistema fisiológico que permita identificar las diferencias entre un paciente afectado por una enfermedad (caso) y un individuo saludable (control) para desarrollar un protocolo de tratamiento mediante un sistema de control.
 
 ## Actividades
-1. Calcular analíticamente la función de transferencia del sistema pulmonar.
-2. Establecer el modelo de ecuaciones integro-diferenciales.
-3. Determine el error en estado estacionario y la estabilidad del sistema en lazo abierto.
-4. Construir el diagrama de bloques como se indica en la figura 5.4
-5. Diseñar el controlador con Simulink utilizando el bloque PID Controller y la herramienta de Tune para sintonizar los valores óptimos para cada una de las ganancias kP, kI y kD.
-6. Ilustrar el cambio del flujo de aire y el volumen tidal en respuesta a las siguientes formas de onda de presión sinusoidal en la apertura de la vía aérea [Pao(t)]:
-     a) 15 respiraciones por minuto con una amplitud (A) de 2.5 cmH2O, es decir, respiración normal.
-     b) 30 respiraciones por minuto con una amplitud (A) de 1.5 cmH2O, es decir, respiración elevada o taquipnea.
-7. Determinar la respuesta a la función sinusoidal [u(t)=A sinωt] en el intervalo tE[0,30] (segundos), en Python, Simulink y Multisim en lazo abierto y en lazo cerrado con el controlador.
-8. Elaborar el diagrama biológico del sistema con BioRender.com.
-9. Discutir los resultados obtenidos en la experimentaciión in silico y elaborar el reporte de la práctica.
+1. Seleccionar el sistema fisiológico a analizar, descripción del sistema mediante una analogía con un circuito RLC; indicar la enfermedad y los valores correspondientes para el caso y para el control; verificar      la respuesta en lazo abierto en Multisim.
+2. Calcular de forma análitica la función de transferencia, el error en estado estacionario y el modelo de ecuaciones integro-diferenciales; determinar la estabilidad en lazo abierto del caso y del control           utilizando los valores numéricos para cada sistema; verificar que la respuesta en lazo abierto obtenida en Spyder (Python) y Simulink coincida con la respuesta de Multisim.
+3. Diseñar el controlador PID en Simulink; sintonizar las ganancias kP, kI y kD que permitan eliminar el error en la respuesta del caso; ilustrar los resultados (respuestas del control, del caso y del                tratamiento) en un cuaderno computacional de MATLAB y en Spyder con lenguaje Python.
+4. Elaborar el diagrama fisiológico en BioRender, de tal forma que permita visualizar las diferencias entre el caso y el control, identificando los componentes del circuito RLC análogo, las corrientes y              diferencias de potencial, particularmente los componentes que cambian su valor en el caso y el control.
+5. Construir el repositorio de GitHub con todos los resultados del proyecto.
+6. Elaborar un ensayo gráfico que permita visualizar el trabajo realizado desde la descripción del sistema, análisis matemático, simulaciones numéricas, diagrama fisiológico y repositorio de GitHub.
 
 
 ## Docente
